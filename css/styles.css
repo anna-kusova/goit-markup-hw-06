@@ -277,6 +277,10 @@ img {
   padding-bottom: 96px;
 }
 
+.team>.container {
+  padding: 0 28px;
+}
+
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -380,6 +384,7 @@ padding-top: 96px;
   padding-bottom: 96px;
 }
 
+
 .portfolio-title {
   font-weight: 700;
   font-size: 36px;
@@ -457,13 +462,17 @@ padding-top: 96px;
 
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
+
+  padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .container.footer-bg {
   display: flex;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 72px;
 }
 
 .footer-logo-about {
@@ -494,6 +503,7 @@ padding-top: 96px;
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
+
 }
 
 .footer-social-list {
@@ -532,7 +542,9 @@ padding-top: 96px;
 
 .footer-form {
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  /* gap: 24px; */
+  gap: 16px;
 }
 
 .footer-input {
@@ -838,6 +850,10 @@ padding-top: 96px;
     display: none;
   }
 
+    .team>.container {
+      padding: 0 108px;
+    }
+
   .team-list {
     gap: 64px 24px;
   }
@@ -852,10 +868,23 @@ padding-top: 96px;
     .portfolio-item {
       width: calc((100% - 24px) / 2);
     }
+
+        .container.footer-bg {
+          display: flex;
+          flex-direction: row;
+          align-items: baseline;
+          gap: 24px;
+        }
+
+                .footer-form {
+                  display: flex;
+                  flex-direction: row;
+                  gap: 24px;
+                }
 }
 
 @media screen and (min-width: 1158px) {
-  .container {
+  .container, .team>.container {
     width: 1158px;
     padding: 0 15px;
   }
@@ -925,5 +954,11 @@ padding-top: 96px;
         .portfolio-item {
           width: calc((100% - 2 * 24px) / 3);}
 
+.footer {
+  padding-top: 100px;
+    padding-bottom: 100px;
+}
 
         }
+
+
