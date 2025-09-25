@@ -278,7 +278,7 @@ img {
 }
 
 .team>.container {
-  padding: 0 28px;
+  width: 296px;
 }
 
 .team-title {
@@ -472,11 +472,13 @@ padding-top: 96px;
 .container.footer-bg {
   display: flex;
   flex-direction: column;
+  align-items:  center;
   gap: 72px;
+  text-align: center;
 }
 
 .footer-logo-about {
-  margin-right: 120px;
+  /* margin-right: 120px; */
 }
 
 .footer-logo .logo-part {
@@ -494,6 +496,7 @@ padding-top: 96px;
   letter-spacing: 0.02em;
   color: #f4f4fd;
   max-width: 267px;
+  text-align: left;
 }
 
 .footer-paragraph {
@@ -537,7 +540,7 @@ padding-top: 96px;
 }
 
 .footer-subscribe {
-  margin-left: auto;
+  /* margin-left: auto; */
 }
 
 .footer-form {
@@ -851,7 +854,7 @@ padding-top: 96px;
   }
 
     .team>.container {
-      padding: 0 108px;
+      width: 584px;
     }
 
   .team-list {
@@ -872,9 +875,15 @@ padding-top: 96px;
         .container.footer-bg {
           display: flex;
           flex-direction: row;
-          align-items: baseline;
+          /* align-items: baseline; */
           gap: 24px;
+          text-align: left;
+          width: 496px;
         }
+
+                .footer-subscribe {
+                
+                  }
 
                 .footer-form {
                   display: flex;
@@ -959,6 +968,9 @@ padding-top: 96px;
     padding-bottom: 100px;
 }
 
+.footer-logo-about {
+  margin-right: 120px;
+}
         }
 
 
