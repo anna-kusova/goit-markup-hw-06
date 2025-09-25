@@ -893,7 +893,7 @@ padding-top: 96px;
 }
 
 @media screen and (min-width: 1158px) {
-  .container, .team>.container {
+  .container, .team>.container, .container.footer-bg {
     width: 1158px;
     padding: 0 15px;
   }
