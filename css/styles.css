@@ -166,25 +166,28 @@ img {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero-bg.jpg);
+    url(../images/hero-bg-mob.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   max-width: 1440px;
   margin: 0 auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  /* padding-top: 188px;
+  padding-bottom: 188px; */
+
+  padding-top: 72px;
+    padding-bottom: 72px;
 }
 
 .hero-text {
   font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #fff;
-  max-width: 496px;
-  margin: 0 auto 48px;
+  max-width: 216px;
+  margin: 0 auto 72px;
 }
 
 .hero-button {
@@ -836,6 +839,21 @@ padding-top: 96px;
     padding: 0 16px;
   }
 
+     .hero {
+       padding-top: 112px;
+       padding-bottom: 112px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg-tab.jpg);
+     }
+
+.hero-text {
+  font-size: 56px;
+    line-height: 1.07;
+         margin: 0 auto 36px;
+          max-width: 496px;
+        }
+
   .features {
     padding-top: 96px;
     padding-bottom: 96px;
@@ -875,15 +893,12 @@ padding-top: 96px;
         .container.footer-bg {
           display: flex;
           flex-direction: row;
+          flex-wrap: wrap;
           /* align-items: baseline; */
           gap: 24px;
           text-align: left;
-          width: 496px;
+          width: 584px;
         }
-
-                .footer-subscribe {
-                
-                  }
 
                 .footer-form {
                   display: flex;
@@ -897,6 +912,18 @@ padding-top: 96px;
     width: 1158px;
     padding: 0 15px;
   }
+
+  .hero {
+    padding-top: 188px;
+      padding-bottom: 188px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+              rgba(46, 47, 66, 0.7)),
+            url(../images/hero-bg.jpg);
+  }
+
+    .hero-text {
+      margin: 0 auto 48px;
+    }
 
   .features {
     padding-top: 120px;
@@ -967,6 +994,9 @@ padding-top: 96px;
   padding-top: 100px;
     padding-bottom: 100px;
 }
+
+.container.footer-bg {
+  flex-wrap: nowrap;
 
 .footer-logo-about {
   margin-right: 120px;
