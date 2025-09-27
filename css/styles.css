@@ -160,6 +160,11 @@ img {
   color: #404bbf;
 }
 
+.menu-open-btn {
+border: none;
+background-color: transparent;
+}
+
 /* --------------------MOB-MENU--------------------- */
 
 .mob-menu {
@@ -184,6 +189,9 @@ img {
   display: block;
   margin-left: auto;
   margin-bottom: 24px;
+    background-color:  #e7e9fc;
+    border:  1px solid #2e2f42;
+  border-radius: 50%;
 }
 
 .menu-close-button-icon {}
