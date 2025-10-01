@@ -34,6 +34,8 @@ button {
 }
 
 img {
+  height: auto;
+  max-width: 100%;
   display: block;
 }
 
@@ -141,17 +143,18 @@ img {
 }
 
 .menu-close-btn {
-  display: block;
-  background-color: #e7e9fc;
-  border: 1px solid #2e2f42;
-  border-radius: 50%;
-  margin: 0;
-  position: absolute;
-  top: 24px;
-    right: 24px;
-    width: 24px;
-      height: 24px;
-      padding: 0;
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 24px;
+        right: 24px;
+        width: 24px;
+        height: 24px;
+        padding: 0;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 50%;
+        background-color: #e7e9fc;
 }
 
 .mob-menu-list {
@@ -306,6 +309,7 @@ img {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 8px;
+  text-align: center;
 }
 
 .features-description {
@@ -337,7 +341,6 @@ img {
   text-transform: capitalize;
   color: #2e2f42;
   margin: 0 auto 72px;
-  max-width: 192px;
 }
 
 .team-list {
@@ -446,13 +449,11 @@ img {
 
 .portfolio-item {
   width: 100%;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 
-.portfolio-item:hover {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-}
+
 
 .portfolio-item-cover {
   position: relative;
@@ -573,9 +574,9 @@ img {
 }
 
 .footer-form {
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 16px; */
 }
 
 .footer-input {
@@ -586,7 +587,7 @@ img {
   background-color: transparent;
   border: 1px solid #fff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   padding: 8px 16px;
@@ -614,6 +615,7 @@ img {
   height: 40px;
   border-radius: 4px;
   padding: 8px 24px;
+  margin: 16px auto 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -801,6 +803,8 @@ img {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  display: flex;
+  align-items: center;
 }
 
 .modal-check-privacy {
@@ -814,6 +818,7 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  flex-shrink: 0;
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -842,14 +847,13 @@ img {
   border: none;
   border-radius: 4px;
   padding: 16px 32px;
+  margin-left: auto;
+  margin-right: auto;
   min-width: 169px;
   height: 56px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  position: absolute;
-  bottom: 24px;
-  transform: translateX(50%);
   cursor: pointer;
 }
 
@@ -978,7 +982,9 @@ img {
     padding-top: 96px;
     padding-bottom: 96px;
   }
-
+.features-subtitle {
+  text-align: left;
+}
   .features-list {
     gap: 72px 24px;
   }
@@ -1014,7 +1020,8 @@ img {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 24px;
+    align-items: flex-start;
+    gap: 72px 24px;
     text-align: left;
     width: 584px;
   }
@@ -1025,11 +1032,23 @@ img {
     gap: 24px;
   }
 
+    .footer-button {
+      margin: unset;
+    }
+
+                
+
     .modal {
       padding: 72px 24px 24px 24px;
       width: 408px;
         min-height: 584px;
     }
+
+        .modal-button {
+position: absolute;
+  bottom: 24px;
+  transform: translateX(50%);
+        }
 }
 
 /* --------------------MEDIA-DESCTOP--------------------- */
@@ -1150,8 +1169,13 @@ img {
 
   .portfolio-item {
     width: calc((100% - 2 * 24px) / 3);
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
+    .portfolio-item:hover {
+      box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+      0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    }
   .footer {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -1159,9 +1183,13 @@ img {
 
   .container.footer-bg {
     flex-wrap: nowrap;
+    gap: unset;
   }
 
   .footer-logo-about {
     margin-right: 120px;
+  }
+  .footer-subscribe {
+    margin-left: 80px;
   }
 }
