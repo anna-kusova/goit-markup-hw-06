@@ -1032,11 +1032,13 @@ img {
     gap: 24px;
   }
 
+    .footer-input {
+      width: 264px;
+    }
+
     .footer-button {
       margin: unset;
     }
-
-                
 
     .modal {
       padding: 72px 24px 24px 24px;
